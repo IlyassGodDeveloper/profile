@@ -17,49 +17,12 @@ const prefix = botconfig.prefix
 
 
 
-var mysql = require("mysql")
-
-var db_config = {
-  host: "localhost",
-  user: "root",
-  password: "SSbboott11",
-  database: "SBot"
-}
-var con;
-client.on('warn', console.warn);
-
-client.on('error', console.error);
-
-function handleDisconnect() {
-  con = mysql.createConnection(db_config);
-
-  con.connect(function(err) {
-    if(err) {
-      console.log("IJS Found error to connect to the database: ", err);
-      setTimeout(handleDisconnect, 2000); 
-    } else {
-      console.log("\033[92m%s\x1b[0m", "Success: " + "\x1b[0mIJS - Database connected successfully!");
-    }
-
-  });
-  con.on('error', function(err) {
-    console.log('db error');
-    if(err.code === 'PROTOCOL_CONNECTION_LOST') { 
-      handleDisconnect();
-    } else {
-          throw err;
-    }
-  });
-}
-
-handleDisconnect();
 
 client.on('message', async function(message) {
     const cmd = (a,b,c,d) => {
         return;
         }
-        let t = hero.guilds.get("522904523455594496").emojis.find(r => r.name === "true");
-        let f = hero.guilds.get("522904523455594496").emojis.find(r => r.name === "false");
+       
     if(message.author.bot) return;
     if(message.channel.type === 'dm') return;
       con.query(`SELECT * FROM top WHERE gid = '${message.guild.id}' AND id = '${message.author.id}'`, (e, rows) => {
@@ -250,8 +213,6 @@ client.on('message', async function(message) {
 
 
 client.on("message", message => {
-    let t = hero.guilds.get("522904523455594496").emojis.find(r => r.name === "true");
-    let f = hero.guilds.get("522904523455594496").emojis.find(r => r.name === "false");
     const command = message.content.split(" ")[0];
 
     if (command == prefix + "vkick") {
