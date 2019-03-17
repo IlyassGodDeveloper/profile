@@ -14,7 +14,8 @@
     "moment": "^2.22.1",
     "ms": "^2.1.1",
     "request": "^2.85.0",
-    "pretty-ms": "^4.0.0"
+    "pretty-ms": "^4.0.0",
+    "sqlite": "^2.9.3"
 
   },
   "engines": {
