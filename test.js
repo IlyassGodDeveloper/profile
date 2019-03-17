@@ -651,8 +651,6 @@ if (message.channel.type ==="dm") return;
 
 let coinAmt = Math.floor(Math.random() * 3) + 1;
 let baseAmt = Math.floor(Math.random() * 3) + 1;
-let t = hero.guilds.get("522904523455594496").emojis.find(r => r.name === "true");
-let f = hero.guilds.get("522904523455594496").emojis.find(r => r.name === "false");
   let profile = sql.prepare(`SELECT * FROM profile WHERE UserID = '${message.author.id}'`).get()
 
   let sqlstr;
@@ -701,8 +699,6 @@ let about = sql.prepare(`SELECT * FROM about WHERE UserID = '${message.author.id
 bot.on('message',async message => {
 	if(message.author.bot || message.channel.type === 'dm' || !message.content.startsWith(prefix)) return;
 	let args = message.content.split(" ").slice(1);
-	let t = hero.guilds.get("522904523455594496").emojis.find(r => r.name === "true");
-	let f = hero.guilds.get("522904523455594496").emojis.find(r => r.name === "false");
 	let cmd = message.content.split(" ")[0].substring(prefix.length);
 	if(cmd === "rep") {
 					let pUser = message.mentions.users.first();
@@ -742,8 +738,6 @@ bot.on('message',async message => {
 	let bg = require("./bg.json");
 let wesam = require("./wesam.json");
 const talkedRecently = new Set();
-let t = hero.guilds.get("522904523455594496").emojis.find(r => r.name === "true");
-let f = hero.guilds.get("522904523455594496").emojis.find(r => r.name === "false");
 let color;
 let arrow;
 
@@ -1161,8 +1155,6 @@ talkedRecently.add(message.author.id);
 
 } else if(cmd === "note") {
 			let noty = args.join(" ");
-			let t = hero.guilds.get("522904523455594496").emojis.find(r => r.name === "true");
-      let f = hero.guilds.get("522904523455594496").emojis.find(r => r.name === "false");
     if(message.mentions.users.size >= 1) return message.reply(`**${f} | Error in command.**`);
     if(noty.length < 1) return message.reply(`**${f} | please type your note.**`)
     if(noty.length > 180) return message.reply(`**${f} | don\'t type note with up 180 leter.**`)
@@ -1245,8 +1237,7 @@ bot.on('message', message => {
 	if(cmd === "buy") {
 		let bg = require("./bg.json");
 		let args = message.content.split(" ").slice(1)
-		let t = hero.guilds.get("522904523455594496").emojis.find(r => r.name === "true");
-		let f = hero.guilds.get("522904523455594496").emojis.find(r => r.name === "false");
+		
     let bgnum = parseInt(args[0]);
     if(message.mentions.users.size >= 1) return message.reply(`**${f} | Error in command.**`);
     if(!args[0]) return message.reply(`**${f} | please select background.**`)
@@ -1273,8 +1264,6 @@ bot.on('message', message => {
 	let cmd = message.content.split(" ")[0].substring(prefix.length);
 	if(cmd === "wm") {
 		let args = message.content.split(" ").slice(1)
-		let t = hero.guilds.get("522904523455594496").emojis.find(r => r.name === "true");
-		let f = hero.guilds.get("522904523455594496").emojis.find(r => r.name === "false");
 		const devs = ['516618898850709504','475396751549792277','515096989369761802','418715344614588428'];
 		if (!devs.includes(message.author.id)) return;
 		let pUser = message.mentions.users.first();
