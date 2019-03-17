@@ -1,1 +1,21 @@
-worker: node test.js,shop1.js
+{
+  "apps": [
+{
+      "name": "log-welcome",
+      "script": "./set.js"
+      },{
+      "name": "Tickets",
+      "script": "./tick.js"
+      },{
+        "name": "ksomk",
+        "script": "./bot.js"
+      },{
+        "name": "kosmenk",
+        "script": "./prof.js"
+        },{
+          "name": "7mra",
+          "script": "./welcome.js"
+        }
+
+  ]
+}
