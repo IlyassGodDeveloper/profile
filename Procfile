@@ -1,1 +1,2 @@
-worker: node start.json
+worker: node test.js
+worker: node shop1.js
