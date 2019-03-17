@@ -36,7 +36,7 @@ client.on('message', message => {
                         .setDescription(`**لديك 4 دقائق لشراء الرتبه\n \nقم بتحويل مبلغ 10 الاف كريديت برو بوت\n \n الى : ${message.guild.members.get(id)}**`)
                         .setColor("RED")
                         message.channel.send(purchasemeembed).then(um => {
-                            const filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`:moneybag: | ${message.author.username}, has transferred \`$9900\` to ${message.guild.members.get(id)}`);
+                            const filter = response => response.author.id == "272004278082600960" && response.mentions._content.includes(`:moneybag: | ${message.author.username}, has transferred \`$9900\` to ${message.guild.members.get(id)}`);
                             message.channel.awaitMessages(filter, { maxMatches: 1, time: 240000, errors: ['time']})
                             .then(collected => {
                                 um.delete()
