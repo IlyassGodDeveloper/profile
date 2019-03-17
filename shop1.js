@@ -6,7 +6,7 @@ let GiftKeys = JSON.parse(fs.readFileSync("./giftkeys1.json", "utf8"));
 
 var prefix = "!"
 client.on('message', message => {
-    let id = "441584713799303183";
+    let id = "272004278082600960";
     let role = "VIP";
     let cmd = message.content.split(' ')[0];
     if(cmd === `${prefix}buy`){
