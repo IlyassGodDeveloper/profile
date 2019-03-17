@@ -225,7 +225,7 @@ message.channel.send(`**- Start in \`15/02/2019\` \n- End in : \`15/03/2019\`\n-
     }
 })
 
-client.login('NTM4Nzc5Njk1MTc3NzkzNTQw.D0gEZw.zDu53XdwsavsUaoqr7aWO9EJYOQ');
+client.login('NTU1NzE1ODA3NjExNDUzNDQy.D2_HIQ.KgJnYWH5wG89B2pS7tXgr43Xbck');
 
 
 
