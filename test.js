@@ -13,10 +13,7 @@ const jimp = require('jimp');
 const moment = require("moment");
 const pretty = require("pretty-ms");
 
-const SQLite = require("better-sqlite3");
 const Canvas = require('canvas');
-const sql = new SQLite('./profile.sqlite');
-const sqll = new SQLite('./edited.sqlite')
 const prettyMs = require('pretty-ms');
 const prefix = "M";
 let done1 = {};
