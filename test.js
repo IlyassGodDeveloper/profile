@@ -18,7 +18,7 @@ const Canvas = require('canvas');
 const sql = new SQLite('./profile.sqlite');
 const sqll = new SQLite('../Sbot/edited.sqlite')
 const prettyMs = require('pretty-ms');
-const prefix = "$";
+const prefix = "M";
 let done1 = {};
 
 bot.on('message', message => {
@@ -1294,4 +1294,4 @@ return message.reply(`**${t} | Done, changed wesams.*`);
 	}
 })
 
-bot.login('NTIyODk5Nzk0MzY5NDQ1ODkw.D1rQmA.lr6ha_AJ_XvBO_aa3h-n8ntLBqs');
+bot.login('NTU1NzE1ODA3NjExNDUzNDQy.D2_HIQ.KgJnYWH5wG89B2pS7tXgr43Xbck');
