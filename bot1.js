@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-client.login('NTQ2MjczNzAwOTEyMTY4OTYw.D0l0yg.BaFY2yTfFeI5Rmw7u56BYulsGlA');
+client.login('NTYzNzYxOTczNTQ0NzQ3MDA4.XNClmQ.jwpceHyQYsoqcM41GJd8mhG4lPI');
 var prefix = "#!"
 client.on('message', message => {
 if(message.author.bot) return;
